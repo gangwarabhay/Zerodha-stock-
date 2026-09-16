@@ -12,38 +12,23 @@ const Menu = () => {
     setSelectedMenu(index);
   };
 
-<<<<<<< HEAD
   const navigate = useNavigate();
 
-const handleLogout = async () => {
-  try {
-    await axios.post(
-      `${process.env.REACT_APP_API_URL}/logout`,
-      {},
-      {
-        withCredentials: true,
-=======
-  const handleLogout = async (e) => {
-    e.stopPropagation();
-
+  const handleLogout = async () => {
     try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_API_URL || ""}/logout`,
+      await axios.post(
+        `${process.env.REACT_APP_API_URL}/logout`,
         {},
-        { withCredentials: true },
+        {
+          withCredentials: true,
+        },
       );
 
-      if (response.data.success) {
-        window.location.href = "/";
->>>>>>> d70cb5c79445f513c4d6358b264895bb483b7f24
-      }
-    );
-
-    window.location.href = process.env.REACT_APP_FRONTEND_URL;
-  } catch (error) {
-    console.error("Logout failed:", error);
-  }
-};
+      window.location.href = process.env.REACT_APP_FRONTEND_URL;
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
 
   const handleProfileClick = () => {
     setIsProfileDropdownOpen(!isProfileDropdownOpen);
