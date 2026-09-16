@@ -12,8 +12,6 @@ const Menu = () => {
     setSelectedMenu(index);
   };
 
-  const navigate = useNavigate();
-
   const handleLogout = async () => {
     try {
       await axios.post(
