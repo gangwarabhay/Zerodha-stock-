@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 const Menu = () => {
@@ -12,25 +12,18 @@ const Menu = () => {
     setSelectedMenu(index);
   };
 
-  const navigate = useNavigate();
-
   const handleLogout = async (e) => {
     e.stopPropagation();
 
-    console.log("Logout clicked");
-
     try {
       const response = await axios.post(
-        (window.location.href = "http://localhost:3001/"),
-        {
-          withCredentials: true,
-        },
+        `${process.env.REACT_APP_API_URL || ""}/logout`,
+        {},
+        { withCredentials: true },
       );
 
-      console.log("Logout response:", response.data);
-
       if (response.data.success) {
-        navigate("http://localhost:3001/signup");
+        window.location.href = "/";
       }
     } catch (error) {
       console.error("Logout error:", error);
