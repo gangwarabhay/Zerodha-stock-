@@ -5,9 +5,6 @@ import Pricing from "./pricing";
 import Education from "./education";
 import Awards from "./awards";
 import OpenAccount from "../openAccount";
-import Navbar from "../navbar";
-import Footer from "../footer";
-
 function HomePage() {
   return (
     <>

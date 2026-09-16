@@ -14,28 +14,22 @@ const Menu = () => {
 
   const navigate = useNavigate();
 
-  const handleLogout = async (e) => {
-    e.stopPropagation();
-
-    console.log("Logout clicked");
-
-    try {
-      const response = await axios.post(
-        (window.location.href = "http://localhost:3001/"),
-        {
-          withCredentials: true,
-        },
-      );
-
-      console.log("Logout response:", response.data);
-
-      if (response.data.success) {
-        navigate("http://localhost:3001/signup");
+const handleLogout = async () => {
+  try {
+    await axios.post(
+      `${process.env.REACT_APP_API_URL}/logout`,
+      {},
+      {
+        withCredentials: true,
       }
-    } catch (error) {
-      console.error("Logout error:", error);
-    }
-  };
+    );
+
+    window.location.href = process.env.REACT_APP_FRONTEND_URL;
+  } catch (error) {
+    console.error("Logout failed:", error);
+  }
+};
+
   const handleProfileClick = () => {
     setIsProfileDropdownOpen(!isProfileDropdownOpen);
   };

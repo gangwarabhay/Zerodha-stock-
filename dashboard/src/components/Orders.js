@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Orders = () => {
   const [allOrders, setAllOrderss] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/allOrders").then((res) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/allOrders`).then((res) => {
       setAllOrderss(res.data);
     });
   }, []);

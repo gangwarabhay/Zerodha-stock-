@@ -5,14 +5,13 @@ import "./index.css";
 import HomePage from "../src/landing_page/Home/HomePage";
 import SignupPage from "./landing_page/signup/SignupPage";
 import AboutPage from "../src/landing_page/about/AboutPage";
-import ProductPage from "../src/landing_page/products/ProductPage";
+import ProductPage from "../src/landing_page/products/ProductsPage";
 import SupportPage from "../src/landing_page/support/SupportPage";
 import PricingPage from "./landing_page/pricing/PricingPage";
-import Navbar from "../src/landing_page/navbar";
+import Navbar from "../src/landing_page/Navbar";
 import Footer from "../src/landing_page/footer";
-import NotFound from "../src/landing_page/notFound";
-import Signup from "./landing_page/signup/SignupPage";
-import LogIn from "./landing_page/login/login";
+import NotFound from "../src/landing_page/NotFound"
+import LogIn from "../src/landing_page/login/LogIn";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -26,7 +25,6 @@ root.render(
       <Route path="/support" element={<SupportPage />} />
       <Route path="/pricing" element={<PricingPage />} />
       <Route path="/login" element={<LogIn />} />
-      <Route path="/signup" element={<Signup />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>
