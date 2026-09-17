@@ -21,7 +21,7 @@ function LogIn() {
       await axios.post(`${process.env.REACT_APP_VERCEL_URL}/login`, formData, {
         withCredentials: true,
       });
-      window.location.href = "/dashboard";
+       window.location.href =  `${process.env.REACT_APP_DASHBOARD_URL}/`;
     } catch (err) {
       setError(
         err.response?.data?.message || "Unable to log in. Please try again.",
