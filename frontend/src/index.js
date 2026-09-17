@@ -10,8 +10,8 @@ import SupportPage from "../src/landing_page/support/SupportPage";
 import PricingPage from "./landing_page/pricing/PricingPage";
 import Navbar from "../src/landing_page/Navbar";
 import Footer from "../src/landing_page/footer";
-import NotFound from "../src/landing_page/NotFound"
-import LogIn from "../src/landing_page/login/LogIn";
+import NotFound from "../src/landing_page/NotFound";
+import LogIn from "../src/landing_page/login/login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
