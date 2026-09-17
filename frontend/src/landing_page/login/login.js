@@ -17,6 +17,7 @@ function LogIn() {
     setIsSubmitting(true);
 
     try {
+      // url udate to vercel url
       await axios.post(`${process.env.REACT_APP_VERCEL_URL}/login`, formData, {
         withCredentials: true,
       });
