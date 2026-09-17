@@ -17,11 +17,9 @@ function LogIn() {
     setIsSubmitting(true);
 
     try {
-      await axios.post(
-        `${process.env.REACT_APP_API_URL || ""}/login`,
-        formData,
-        { withCredentials: true },
-      );
+      await axios.post(`${process.env.REACT_APP_VERCEL_URL}/login`, formData, {
+        withCredentials: true,
+      });
       window.location.href = "/dashboard";
     } catch (err) {
       setError(
