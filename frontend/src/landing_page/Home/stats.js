@@ -25,14 +25,14 @@ function Stats() {
         <div className="col-6 mt-5 p-5">
           <img
             src="../media/images/ecosystem.png"
-            alt="Stats Image"
+            alt="StatsImage"
             style={{ width: "85%" }}
           />
           <div className="d-flex justify-content-between mt-5 mr-3">
-            <a href="" className="btn btn-primary">
+            <a href=" " className="btn btn-primary">
               Explore our Products
             </a>
-             <a href="" className="btn btn-primary">
+             <a href=" " className="btn btn-primary">
               Try Kite
             </a>
           </div>

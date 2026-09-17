@@ -24,6 +24,7 @@ function Universe() {
           <div className="col-3" style={{ marginLeft: "8%" }}>
             <img
               src="../media/images/ZerodhaFundhouse.png"
+              alt="fundhouseLogo"
               style={{ width: "100%" }}
             />
             <p className="text-small text-muted mt-3 p-3">
@@ -32,6 +33,7 @@ function Universe() {
             </p>
             <img
               src="../media/images/StreakLogo.png"
+              alt="streakLogo"
               style={{ width: "100%", marginTop: "25px" }}
             />
             <p className="text-small text-muted mt-3 p-3">
@@ -42,6 +44,7 @@ function Universe() {
           <div className="col-3" style={{ marginLeft: "50px" }}>
             <img
               src="../media/images/sensibullLogo.svg"
+              alt="sensibullLogo"
               style={{ width: "100%" }}
             />
             <p className="text-small text-muted mt-3 p-3">
@@ -51,6 +54,8 @@ function Universe() {
             </p>
             <img
               src="../media/images/smallcaseLogo.png"
+              alt
+="smallcaseLogo"  
               style={{ width: "100%", marginTop: "25px" }}
             />
             <p className="text-small text-muted mt-3 p-3">
@@ -67,6 +72,7 @@ function Universe() {
           >
             <img
               src="../media/images/goldenpiLogo.png"
+              alt="goldenpiLogo"
               style={{ width: "100%" }}
             />
             <p className="text-small text-muted mt-3 p-3">
@@ -75,6 +81,7 @@ function Universe() {
             </p>
             <img
               src="../media/images/dittoLogo.png"
+              alt="dittoLogo"
               style={{ width: "100%", height: "10%", marginTop: "25px" }}
             />
             <p className="text-small text-muted mt-3 p-3">

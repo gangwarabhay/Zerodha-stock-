@@ -30,7 +30,7 @@ function hero() {
           </p>
           <p>Playing basketball is his zen.</p>
           <p>
-            Connect on <a href="/">Homepage</a> /<a href="">TradingQnA</a> /
+            Connect on <a href="/">Homepage</a> /<a href=" ">TradingQnA</a> /
             <a href=" ">Twitter</a>{" "}
           </p>
         </div>
