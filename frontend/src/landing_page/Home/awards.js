@@ -6,7 +6,7 @@ function awards() {
         <div className="col-6">
           <img
             src="../media/images/largestBroker.svg"
-            alt="Award Image"
+            alt="AwardImage"
             className="mb-5"
           />
         </div>
