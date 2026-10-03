@@ -8,9 +8,9 @@ import AboutPage from "../src/landing_page/about/AboutPage";
 import ProductPage from "../src/landing_page/products/ProductsPage";
 import SupportPage from "../src/landing_page/support/SupportPage";
 import PricingPage from "./landing_page/pricing/PricingPage";
-import Navbar from "../src/landing_page/Navbar";
+import Navbar from "../src/landing_page/navbar";
 import Footer from "../src/landing_page/footer";
-import NotFound from "../src/landing_page/NotFound";
+import NotFound from "../src/landing_page/notFound";
 import LogIn from "../src/landing_page/login/login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
